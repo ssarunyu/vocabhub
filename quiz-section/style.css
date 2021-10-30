@@ -7,36 +7,24 @@
 
 
 body {
-    background-color: #6065cf;
+    background-color: #F5F5F5;
 }
 section {
     width: 20rem;
-}
-
-/* nav */
-nav {
-    display: flex;
-    width: 100%;
-    height: 3rem;
-    background: black;
-}
-
-.logo img {
-    width: 12rem;
-    height: 3rem;
 }
 
 /* Main box */
 .container {
     background: white;
     color: black;
-    padding: 2.5rem 1rem;
+    padding: 3rem 1rem;
     border-radius: 10px;
-    box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 20px 1px rgba(145, 145, 145, 0.1);
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
+    border-radius: 30px;
 }
 
 .container.remove {
@@ -61,18 +49,18 @@ nav {
     background-color:#ffe06b;
     cursor: pointer;
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: .4rem;
     padding: .5rem;
     color: black;
-    border-radius: 5px;
-    transition: .3s;
+    border-radius: 30px;
+    transition: .5s;
 }
 .option.correct {
-    transition: .3s;
+    transition: .5s;
     background: #38ecb0;
 }
 .option.incorrect {
-    transition: .3s;
+    transition: .5s;
     background: rgb(238, 83, 83);
 }
 .option.dis {
@@ -81,19 +69,29 @@ nav {
 
 .ques_con {
     position: absolute;
+    background: #26547C;
+    padding: .3rem 1.4rem;
+    border-radius: 20px;
+    color: white;
+    font: 700;
     top: 10px;
     left: 10px;
 }
 .score_con {
     position: absolute;
+    background: #06D6A0;
+    padding: .3rem 1.4rem;
+    border-radius: 20px;
+    color: white;
     top: 10px;
     right: 10px;
 }
-.score_con.correct {
-    color: green;
-}
-.score_con.incorrect {
-    color: red;
+.session_title {
+    font-weight: 700;
+    top: 10px;
+    left: 8rem;
+    position: absolute;
+    background: linear-gradient(269.62deg, #BF0AFF 0.32%, #FF42CA 99.74%);
 }
 
 /* btn next */
@@ -234,23 +232,23 @@ nav {
     text-align: center;
     margin-top: 6rem;
     width: 15rem;
-    color: #5851ce;
+    color: #111111;
 }
 
 .reload {
     cursor: pointer;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    background-color: #736ced;
+    color: black;
+    border: 2px black solid;
+    border-radius: 5px;
+    background-color: white;
     transition: .4s;
     padding: .5rem 2rem;
-    border: none;
     margin-left: 25%;
     margin-top: 1rem;
 }
 .reload:hover {
-    background-color: #5851ce;
+    background-color: black;
+    color: white;
 }
 
 .tag1 {
@@ -267,28 +265,17 @@ nav {
     color: #1e1894;
 }
 
-.contact {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-}
-.contact a {
-    text-decoration: none;
-    color : #38ecb0;
-}
-
 /* Lazy */
 .lazy {
     cursor: pointer;
     height: 2.5rem;
-    background-color: #5D92B3;
+    background-color: #B0002A;
     color: whitesmoke;
     border: none;
-    border-radius: 1rem;
+    border-radius: 30px;
     margin-top: 1rem;
-    width: 100%;
+    width: 50%;
+    margin-left: 25%;
 }
 
 @media only screen and (max-width: 380px) {
