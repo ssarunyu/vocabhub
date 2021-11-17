@@ -53,8 +53,8 @@ function selectAns(answer) {
 }
             function plus(){
                 nowQuestion++
-                showQues()
                 final()
+                showQues()
             }
             setTimeout(plus,1000)
 } // function select answer
@@ -68,7 +68,7 @@ function lazyClick() {
     cheerup_box.classList.add("activeCheer")
         score_cheer.innerHTML = `<h2>รอบนี้ทำได้ทั้งหมด <br>${score} / ${nowQuestion + 1} คะแนน</h2><br>ถูกไปตั้ง ${score} ข้อ ผิดแค่ ${incorrect} เอง เก่งมาก!🌷𓂋👛🍬 ⟡｡* ♡`
             reload.addEventListener("click",() => {
-                cheerup_box.classList.remove("activeCheer")
+                window.location.reload()
             })
 }
 
@@ -78,9 +78,9 @@ const score_cheer = document.querySelector(".score_cheer") // word cheer
 function final() {
     if (nowQuestion >= questions.length) {
         cheerup_box.classList.add("activeCheer")
-        score_cheer.innerHTML = `<h1>${score} / ${questions.length}</br></br> รอบนี้ทำถูกไป ${score} ข้อ ผิดไป ${incorrect} ข้อ </br> จากทั้งหมด ${nowQuestion} ข้อ </br> เก่งมากแล้วพยายามเข้า! 🍵 🏣 ✴️`
+        score_cheer.innerHTML = `<h2>รอบนี้ทำได้ทั้งหมด <br>${score} / ${nowQuestion + 1} คะแนน</h2><br>ถูกไปตั้ง ${score} ข้อ ผิดแค่ ${incorrect} เอง เก่งมาก!🌷𓂋👛🍬 ⟡｡* ♡`
             reload.addEventListener("click",() => {
-                window.location.reload();
+                window.location.reload()
             })
     }
 }
