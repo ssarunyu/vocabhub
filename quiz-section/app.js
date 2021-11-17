@@ -66,7 +66,7 @@ lazy.addEventListener("click",() => {
 
 function lazyClick() {
     cheerup_box.classList.add("activeCheer")
-        score_cheer.innerHTML = `<h2>รอบนี้ทำได้ทั้งหมด <br>${score} / ${nowQuestion + 1} คะแนน</h2><br>ถูกไปตั้ง ${score} ข้อ ผิดแค่ ${incorrect} เอง เก่งมาก!🌷𓂋👛🍬 ⟡｡* ♡`
+        score_cheer.innerHTML = `<h2>รอบนี้ทำได้ทั้งหมด <br>${score} / ${nowQuestion} คะแนน</h2><br>ถูกไปตั้ง ${score} ข้อ ผิดแค่ ${incorrect} เอง เก่งมาก!🌷𓂋👛🍬 ⟡｡* ♡`
             reload.addEventListener("click",() => {
                 window.location.reload()
             })
@@ -78,7 +78,7 @@ const score_cheer = document.querySelector(".score_cheer") // word cheer
 function final() {
     if (nowQuestion >= questions.length) {
         cheerup_box.classList.add("activeCheer")
-        score_cheer.innerHTML = `<h2>รอบนี้ทำได้ทั้งหมด <br>${score} / ${nowQuestion + 1} คะแนน</h2><br>ถูกไปตั้ง ${score} ข้อ ผิดแค่ ${incorrect} เอง เก่งมาก!🌷𓂋👛🍬 ⟡｡* ♡`
+        score_cheer.innerHTML = `<h2>รอบนี้ทำได้ทั้งหมด <br>${score} / ${nowQuestion} คะแนน</h2><br>ถูกไปตั้ง ${score} ข้อ ผิดแค่ ${incorrect} เอง เก่งมาก!🌷𓂋👛🍬 ⟡｡* ♡`
             reload.addEventListener("click",() => {
                 window.location.reload()
             })
