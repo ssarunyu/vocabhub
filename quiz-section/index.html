@@ -7,21 +7,40 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>VocabHub l Quiz</title>
 </head>
 <body>
 
 <!--CHEER UP-->
 <div class="cheerup_box">
-    <div class="cheerup">
-        <iframe src="https://giphy.com/embed/BmmfETghGOPrW" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p><a href="https://giphy.com/gifs/reaction-BmmfETghGOPrW"></a></p>
-    </div>
-    <div class="score_cheer">
-        <h3></h3>
-    </div>
-    <button class="reload">Play again</button>
+        <div class="cheerup">
+            <iframe src="https://giphy.com/embed/3o7abA4a0QCXtSxGN2" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p><a href="https://giphy.com/gifs/reaction-BmmfETghGOPrW"></a></p>
+        </div>
+        <div class="cheer_area">
+            <div class="score_cheer"></div>
+        </div>
+        <div class="button_area">
+            <button class="reload">Play again</button>
+            <button class="replay">ย้อนกลับไปดูข้อที่ผิด</button>
+        </div>
 </div>
 
+<!--Replay-->
+<div class="replay_box">
+
+    <div class="replay_area">
+        <div class="header_replay"><h3>ข้อที่ผิด</h3></div>
+        <div class="count_replay"></div>
+        <div class="replay_question"></div>
+        <div class="replay_translate"></div>
+            <div class="replay_btn_area">
+                <button class="replay_back">< Back</button>
+                <button class="replay_next">Next ></button>
+            </div>
+    </div>
+    <i id="close" class="fas fa-times"></i>
+</div>
 
 <!-- Main Question Box -->
     <div class="container" id="container">
@@ -51,10 +70,11 @@
             </div>
         </section>
 
-        <button class="lazy">Give up</button>
+        <button class="giveup">Give up</button>
     </div>
 
 </body>
 <script src="quiz.js"></script>
 <script src="app.js"></script>
+<script src="replay.js"></script>
 </html>
